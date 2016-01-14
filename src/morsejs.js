@@ -144,7 +144,14 @@
                     // Iterate each symbol of the letter
                     mcode[letter].forEach(function (symbol, cIndex, cArr) {
                         // Push the current long/short symbol
-                        translated.push(symbol);
+                        if (symbol === 1) {
+                          translated.push(0);
+                          translated.push(0);
+                          translated.push(0);
+                        } else {
+                          translated.push(0);
+                        }
+
                         // While we are in the middle of the symbol array
                         if (cIndex < (cArr.length - 1)) {
                             // Add a symbol separator
@@ -167,6 +174,11 @@
             // Throw an exception saying as much
             throw "Message must be a string";
         }
+        // 1 - true, 0 - false
+        translated.forEach(function(unit, index) {
+          translated[index] = unit+1;
+        });
+        translated.push(0);
         // Return our translated morse code message
         return translated;
     }

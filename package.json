@@ -1,10 +1,10 @@
 {
-  "name": "morsejs",
-  "version": "0.0.3",
+  "name": "booleanmorse",
+  "version": "0.0.1",
   "description": "Translate a string into Morse code",
   "main": "src/morsejs.js",
   "bin": {
-    "morsejs": "./bin/morsejs"
+    "booleanmorse": "./bin/morsejs"
   },
   "scripts": {
     "test": "karma start conf/karma.conf.js --single-run --browsers PhantomJS",
@@ -16,19 +16,19 @@
     "morse",
     "translation"
   ],
-  "author": "Stephen K",
+  "author": "Richard E",
   "license": "MIT",
   "directories": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zero298/morsejs.git"
+    "url": "git+https://github.com/rerdos/morsejs.git"
   },
   "bugs": {
-    "url": "https://github.com/zero298/morsejs/issues"
+    "url": "https://github.com/rerdos/morsejs/issues"
   },
-  "homepage": "https://github.com/zero298/morsejs#readme",
+  "homepage": "https://github.com/rerdos/morsejs#readme",
   "devDependencies": {
     "jsdoc": "^3.3.3",
     "jslint": "^0.9.3",
